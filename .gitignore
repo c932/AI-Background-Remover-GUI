@@ -1,0 +1,19 @@
+# 忽略 Python 缓存
+__pycache__/
+*.py[cod]
+
+# 忽略虚拟环境
+.venv/
+venv/
+
+# 忽略 PyCharm 配置
+.idea/
+
+# 忽略打包生成的文件夹 (EXE 不应该放在源码库)
+build/
+dist/
+*.spec
+
+# 忽略大模型文件 (让用户自己下载，或者在 Release 中提供)
+models/
+*.onnx
