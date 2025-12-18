@@ -34,8 +34,8 @@
 
 ### 1. 克隆仓库
 ```bash
-git clone https://github.com/您的用户名/您的仓库名.git
-cd 您的仓库名
+git clone https://github.com/c932/AI-Background-Remover-GUI.git
+cd AI-Background-Remover-GUI
 2. 安装依赖
 建议使用 Python 3.10 或 3.11 版本。
 
