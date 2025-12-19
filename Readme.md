@@ -39,7 +39,6 @@ pip install onnxruntime-gpu
 
 目录结构应如下所示：
 
-text
 Project_Root/
 ├── ai_remover.py
 ├── models/
