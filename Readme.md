@@ -64,12 +64,23 @@ powershell
 pyinstaller --noconfirm --onedir --windowed --add-data "models;models" --collect-all tkinterdnd2 --name="ai_remover" ai_remover.py
 
 --onedir: 生成文件夹（推荐，启动更快，方便替换模型）。
+
 --collect-all tkinterdnd2: 关键参数，强制收集拖拽库的所有依赖文件。
+
 --add-data "models;models": 将本地模型打包进去，实现离线运行。
+
 ❓ 常见问题
-Q: 为什么打开软件报错 "Model not found"? A: 请检查 models 文件夹是否存在，以及里面是否包含了对应的 .onnx 文件。
-Q: 如何确认是否使用了 GPU? A: 软件启动时，控制台或后台日志不会报错。如果处理速度非常快（<1秒），通常说明 GPU 正在工作。如果是 CPU 模式，处理一张图可能需要 3-5 秒。
-Q: 处理半透明物体效果不好？ A: 请尝试开启界面左侧的 "边缘精修 (Alpha Matting)" 开关。
-Q: 打包后启动报错 "Unable to load tkdnd library"? A: 请确保打包命令中包含了 --collect-all tkinterdnd2。
+Q: 为什么打开软件报错 "Model not found"? 
+A: 请检查 models 文件夹是否存在，以及里面是否包含了对应的 .onnx 文件。
+
+Q: 如何确认是否使用了 GPU? 
+A: 软件启动时，控制台或后台日志不会报错。如果处理速度非常快（<1秒），通常说明 GPU 正在工作。如果是 CPU 模式，处理一张图可能需要 3-5 秒。
+
+Q: 处理半透明物体效果不好？ 
+A: 请尝试开启界面左侧的 "边缘精修 (Alpha Matting)" 开关。
+
+Q: 打包后启动报错 "Unable to load tkdnd library"? 
+A: 请确保打包命令中包含了 --collect-all tkinterdnd2。
+
 📄 许可证
 本项目基于 MIT License 开源。 核心算法基于 Rembg 项目。
