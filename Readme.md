@@ -57,6 +57,13 @@ python ai_remover.py
 bash
 pip install pyinstaller
 
+仓库已内置 `ai_remover.spec`（包含 `models` 数据目录与 `tkinterdnd2` 收集配置），可直接使用：
+
+powershell
+pyinstaller ai_remover.spec
+
+产物在 `dist/`。若手写命令行，请参考下面的参数说明。
+
 然后使用以下命令进行打包。注意：必须使用 --collect-all tkinterdnd2 参数，否则拖拽功能会失效。
 
 powershell
